@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="9dp"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/Proflie_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:src="@drawable/defualt_emage" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/show_text_massage"
+            android:text="@string/hello"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/coloars"/>
+        <ImageView
+            android:id="@+id/right_image_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_seen"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/seen"
+            android:layout_below="@id/show_text_massage"/>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

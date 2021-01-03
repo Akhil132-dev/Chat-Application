@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+  >
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_main_logine"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/appBarLayout"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <EditText
+        android:id="@+id/email_Login"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints="Email"
+        android:background="@drawable/coloars"
+        android:hint="@string/email"
+
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:textColor="@android:color/widget_edittext_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextFields" />
+
+    <EditText
+        android:id="@+id/password_Login"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints="password"
+        android:background="@drawable/coloars"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/widget_edittext_dark"
+        app:layout_constraintEnd_toEndOf="@+id/email_Login"
+        app:layout_constraintStart_toStartOf="@+id/email_Login"
+        app:layout_constraintTop_toBottomOf="@+id/email_Login"
+        tools:ignore="TextFields" />
+
+    <Button
+        android:id="@+id/Login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:text="@string/login"
+        android:textColor="@android:color/white"
+        android:background="@drawable/coloars"
+        app:layout_constraintEnd_toEndOf="@+id/password_Login"
+        app:layout_constraintStart_toStartOf="@+id/password_Login"
+        app:layout_constraintTop_toBottomOf="@+id/password_Login" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

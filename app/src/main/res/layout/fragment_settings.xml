@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".FragmentS.SettingsFragment">
+
+
+    <ImageView
+        android:id="@+id/cover_image_setting"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ss_dd_covef" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_setting"
+        android:layout_width="100dp"
+
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        android:foregroundGravity="center|center_horizontal"
+        android:scaleType="centerCrop"
+        android:src="@drawable/defualt_emage"
+        app:civ_border_color="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.304" />
+
+    <ImageView
+        android:id="@+id/fb_id"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/coloars"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.575" />
+
+    <ImageView
+        android:id="@+id/instragram_id"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/coloars"
+        android:scaleType="centerCrop"
+        android:src="@drawable/instagram"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/website_id"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toEndOf="@+id/fb_id"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.582" />
+
+    <ImageView
+        android:id="@+id/website_id"
+        android:layout_width="62dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/coloars"
+        android:src="@drawable/website"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.578" />
+
+    <TextView
+        android:id="@+id/username_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="32dp"
+        android:text="Akhilesh goswami"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatmassageActivity"
+    android:orientation="horizontal">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout_chatmassage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_main_Chatmassage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            app:layout_constraintTop_toTopOf="@+id/appBarLayout"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/chatmassage_image"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/defualt_emage" />
+
+            <TextView
+                android:id="@+id/User_name_chats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="Usernaem" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recyclewview_chatmassage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/appBarLayout_chatmassage"
+
+    android:layout_above="@+id/relative_layout_bootom"/>
+    <RelativeLayout
+        android:backgroundTint="#fff"
+        android:id="@+id/relative_layout_bootom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:background="@drawable/coloars"
+        android:layout_alignParentBottom="true"
+        >
+        <ImageView
+            android:id ="@+id/attach_files_chatmassage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/kker"/>
+
+        <EditText
+            android:id="@+id/text_massage_chat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/attach_files_chatmassage"
+            android:background="@android:color/transparent"
+          android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@+id/send_massage_files_chatmassage"
+            android:autofillHints="write massage here" />
+
+        <ImageView
+            android:id ="@+id/send_massage_files_chatmassage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_action_name"/>
+    </RelativeLayout>
+</RelativeLayout>
